@@ -1,0 +1,416 @@
+body
+    font-family: sans-serif
+.container
+    max-width: 1140px
+    margin: 0 auto
+.header
+    background: #231F20
+.header__top
+    padding: 20px 0
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3)
+    & > .container
+        display: flex
+        justify-content: space-between
+        align-items: center
+    & p
+        margin: 0
+.header__adress
+    font-size: 14px
+    line-height: 17px
+    color: #FFFFFF
+    display: flex
+    align-items: center
+    & span
+        display: block
+        width: 159px
+    & svg
+        margin-right: 10px
+.header__mail
+    display: flex
+    align-items: center
+    font-size: 14px
+    line-height: 17px
+    color: #FFFFFF
+    transition: all .4s ease-in-out
+    text-decoration: none
+    & svg
+        margin-right: 9px
+        & rect
+            transition: all .4s ease-in-out
+    &:hover
+        color: #F9A51B
+        text-decoration: underline
+        & rect
+            fill: #FFFFFF
+.header__time
+    display: flex
+    align-items: center
+    font-size: 14px
+    line-height: 17px
+    color: #FFFFFF
+    & svg
+        margin-right: 9px
+        & rect
+            fill: #F9A51B
+.header__phone
+    display: flex
+    align-items: center
+    color: #FFFFFF
+    font-size: 16px
+    line-height: 22px
+    transition: all .4s ease-in-out
+    text-decoration: none
+    &:hover
+        color: #F9A51B
+        text-decoration: underline
+        & rect
+            fill: #FFFFFF
+    & svg
+        margin-right: 10px
+        & rect
+            transition: all .4s ease-in-out
+.header__callback
+    text-decoration: none
+    width: 177px
+    height: 46px
+    border: 4px solid #F9A51B
+    box-sizing: border-box
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 16px
+    line-height: 22px
+    color: #F9A51B
+    transition: all .4s ease-in-out
+    &:hover
+        color: #FFFFFF
+        background: #F9A51B
+.products
+    padding-top: 57px
+    & h2
+        margin: 0
+        font-size: 30px
+        line-height: 36px
+        color: #000000
+        padding-bottom: 20px
+        max-width: 698px
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            height: 4px
+            width: 100px
+            background: #F9A51B
+.products__wrap
+    display: flex
+    justify-content: space-between
+    margin-top: 48px
+.products__text
+    max-width: 340px
+    & h3
+        margin: 0
+        font-size: 24px
+        line-height: 34px
+        color: #231F20
+        padding-bottom: 11px
+    & p
+        margin: 0
+        font-size: 18px
+        line-height: 25px
+        color: #000000
+.products__items
+    max-width: 760px
+    & ul
+        margin: 0
+        padding: 0
+        list-style: none
+        display: flex
+        flex-wrap: wrap
+    & li
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 240px
+        height: 70px
+        box-sizing: border-box
+        border: 4px solid #F9A51B
+        margin: 0 10px 24px 0
+        & a
+            text-decoration: none
+            width: 100%
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            font-size: 18px
+            line-height: 25px
+            text-align: center
+            color: #000000
+            transition: all .4s ease-in-out
+            &:hover
+                background: #F9A51B
+                color: #FFFFFF
+.benefits, .about, .partners
+    padding-top: 80px
+    & h2
+        margin: 0
+        font-size: 24px
+        line-height: 34px
+        color: #231F20
+        padding-bottom: 18px
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 100px
+            height: 4px
+            background: #F9A51B
+.benefits__wrap
+    margin-top: 44px
+    & ul
+        list-style: none
+        margin: 0
+        padding: 0
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        & li
+            width: 33.3%
+            box-sizing: border-box
+            display: flex
+            align-items: flex-start
+            padding: 15px 10px 20px 24px
+            border-left: 2px solid rgba(187, 187, 187, 0.3)
+            border-bottom: 2px solid rgba(187, 187, 187, 0.3)
+            &:nth-child(4)
+                border-left: none
+                border-bottom: none
+            &:first-child
+                border-left: none
+            &:last-child
+                border-bottom: none
+            &:nth-child(5)
+                border-bottom: none
+            & img
+                margin-right: 18px
+.benefits__text
+    & h3
+        margin: 0
+        font-size: 20px
+        line-height: 28px
+        color: #000000
+        padding-bottom: 11px
+    & p
+        margin: 0
+        font-size: 16px
+        line-height: 22px
+        color: #000000
+.about__wrap
+    display: flex
+    align-items: center
+    margin-top: 40px
+.about__image
+    max-width: 500px
+    max-height: 281px
+    position: relative
+    margin-left: 16px
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background: #F9A51B
+        display: block
+        z-index: -1
+        top: -16px
+        left: -16px
+    & img
+        display: block
+        width: 100%
+        z-index: 5
+.about__text
+    max-width: 585px
+    margin-left: 42px
+    & p
+        margin: 0
+        font-size: 18px
+        line-height: 25px
+        color: #000000
+.partners__wrap
+    margin-top: 40px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    align-items: center
+    & img
+        display: block
+        margin: 0 40px 45px 40px
+.footer
+    background: #212121
+.footer__top
+    border-bottom: rgba(249, 165, 27, 0.3)
+    padding: 15px 0
+    & > .container
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+.footer__logo
+    height: 150px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    & p
+        margin: 0
+        font-size: 14px
+        font-weight: 500
+        line-height: 17px
+        color: #FFFFFF
+        max-width: 235px
+        padding-top: 18px
+.footer__menu
+    width: 389px
+    & h4
+        margin: 0
+        font-size: 18px
+        line-height: 21px
+        color: #FFFFFF
+        padding-bottom: 6px
+    & ul
+        margin: 0
+        padding: 0
+        list-style: none
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        & li
+            width: 48%
+            & a
+                text-decoration: none
+                font-size: 14px
+                line-height: 21px
+                color: #FFFFFF
+                transition: all .4s ease-in-out
+                &:hover
+                    text-decoration: underline
+                    color: #F9A51B
+.footer__info
+    display: flex
+    flex-direction: column
+    height: 100%
+    & a
+        text-decoration: none
+        color: #FFFFFF
+        font-size: 18px
+        line-height: 21px
+        font-weight: 500
+        transition: all .4s ease-in-out
+        margin-bottom: 10px
+        &:hover
+            color: #F9A51B
+            text-decoration: underline
+.footer__contact
+    & h4
+        font-size: 18px
+        line-height: 21px
+        color: #FFFFFF
+        margin: 0
+        padding-bottom: 9px
+    & a 
+        display: flex
+        align-items: center
+        color: #FFFFFF
+        font-size: 14px
+        line-height: 21px
+        text-decoration: none
+        transition: all .4s ease-in-out
+        &:hover
+            color: #F9A51B
+            text-decoration: underline
+            & rect
+                fill: #FFFFFF
+        & svg
+            margin-right: 9px
+            & rect
+                transition: all .4s ease-in-out
+    & p
+        margin: 15px 0
+        font-size: 14px
+        display: flex
+        align-items: center
+        color: #FFFFFF
+        line-height: 17px
+        & svg
+            margin-right: 9px
+        & span
+            display: block
+            max-width: 170px
+@media(max-width: 991px)
+    .header__top 
+        padding: 10px 0
+        & a
+            margin: 5px 0
+    .header__top > .container
+        flex-direction: column
+    .header__adress span
+        width: auto
+    .benefits__wrap ul li
+        width: 100%
+        border-left: none
+        border-bottom: 2px solid rgba(187, 187, 187, 0.3)
+        &:last-child
+            border-bottom: none
+        &:nth-child(4)
+            border-bottom: 2px solid rgba(187, 187, 187, 0.3)
+        &:nth-child(5)
+            border-bottom: 2px solid rgba(187, 187, 187, 0.3)
+    .about__wrap
+        flex-direction: column
+    .about__text
+        margin: 15px 0 0 0
+    .footer__top > .container
+        flex-direction: column
+        align-items: center
+    .footer__logo
+        height: auto
+        width: 389px
+        margin-bottom: 7px
+    .footer__logo p
+        padding-top: 5px
+    .footer__info, .footer__contact
+        width: 389px
+        margin-top: 7px
+@media(max-width: 767px)
+    .products h2, .benefits h2, .about h2, .partners h2
+        font-size: 26px
+    .products__wrap
+        flex-direction: column
+        align-items: center
+    .products__text
+        max-width: 100%
+        margin-bottom: 15px
+    .products__text h3
+        font-size: 22px
+    .products__items li
+        width: 230px
+        margin: 0 5px 24px 0
+    .benefits, .about, .partners
+        padding-top: 25px
+    .partners__wrap img
+        max-width: 310px
+        margin: 0 5px 15px 5px
+    .footer__logo
+        width: auto
+    .footer__menu
+        max-width: 320px
+    .footer__info, .footer__contact
+        width: auto
+@media(max-width: 575px)
+    .products h2, .benefits h2, .about h2, .partners h2
+        font-size: 20px
+        line-height: 24px
+    .products__wrap, .benefits__wrap
+        margin-top: 20px
